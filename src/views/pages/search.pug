@@ -1,0 +1,39 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+  body
+    main
+      include ../components/header
+      - var noticias = "active"
+      include ../components/navbar
+      .section-busqueda
+        h2 Resultado de búsqueda
+        h3 “Crédito de consumo”
+        //- h4 No hay resultados para <br> “préstamo”
+        .section-busqueda_resultados
+          .box-resultado
+            h5 Crédito de consumo
+            h6 Pensionados del sistema IPS
+            a(href="") www.financoop.cl/creditos-de-consumo/
+          .box-resultado
+            h5 Crédito de consumo
+            h6 Pensionados del sistema IPS
+            a(href="") www.financoop.cl/creditos-de-consumo/
+          .box-resultado
+            h5 Crédito de consumo
+            h6 Pensionados del sistema IPS
+            a(href="") www.financoop.cl/creditos-de-consumo/
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

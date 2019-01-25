@@ -1,0 +1,89 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+    //-Hubspot
+    script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+
+    
+  body
+    main
+      include ../components/header
+      - var ahorros = "active"
+      include ../components/navbar
+      .section-tab
+        h1 Ahorros
+        nav
+          #nav-tab.nav.nav-tabs(role='tablist')
+            a#nav-deposito-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-deposito', role='tab', aria-controls='nav-deposito', aria-selected='true') Depósitos a Plazo
+            a#nav-capital-tab.nav-item.nav-link(data-toggle='tab', href='#nav-capital', role='tab', aria-controls='nav-capital', aria-selected='false') Capital Social
+        #nav-tabContent.tab-content
+          #nav-deposito.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-deposito-tab')
+            .tab-info
+              .row
+                .col-12.col-md-6.order-md-1
+                  img(src="./assets/img/img_familia.png", alt="Pensionados").img-tab
+                .col-12.col-md-6.order-md-0
+                  p Depósito a Plazo Fijo por un plazo mínimo de 30 días y sin restricción en plazo máximo, tasas de interés máxima a pagar, base a 30 días es del 0,30% en este nuevo proceso.
+                  h4 Ventajas de ahorras con nosotros
+                  ul 
+                    li Rentabilidad conveniente
+                    li Plazo fijo o Renovable automáticamente
+                    li Monto mínimo $100.000
+                    li Sin cobro de gastos por mantención o comisiones
+                    li Depósitos de los fondos en su Cuenta Corriente o Cuenta Vista de cualquier banco, al vencimiento del depósito
+                    li Rentabilidad segura sin variación
+                    li Tasas nominales (en pesos) desde 30 días
+                  button.btn-blue.btn-pulse.hide-sm Solicita tu Ahorro
+              button.btn-blue.btn-pulse.btn-sticky_bottom.hide-md.hide-lg Solicita tu Ahorro
+              .tab-info_detalle
+                .tab-info_detalle-requisitos
+                  h5 Requisitos
+                  h6 Puedes enviarnos tus documentos vía Whatsapp o email
+                  ul
+                    li Cédula de Identidad vigente
+                    li Comprobante de domicilio (60 días de vigencia)
+                    li Mayor de 18 años
+          #nav-capital.tab-pane.fade(role='tabpanel', aria-labelledby='nav-capital-tab')
+            .tab-info
+              .row
+                .col-12.col-md-6
+                  img(src="./assets/img/img_familia.png", alt="Pensionados").img-tab
+                .col-12.col-md-6
+                  p Crédito orientado a personas pensionadas del sistema antiguo de previsión social IPS el cual tiene foco en inclusión financiera para las personas del tercera edad.
+                  h4 Ventajas del crédito de consumo
+                  ul 
+                    li Son de libre disposición y sin AVAL
+                    li Cuotas: Hasta 60 meses de plazo
+                    li Tasas reguladas por la Superintendencia de bancos e instituciones financieras de Chileli Atendemos socios hasta los 93 años 11 meses
+                    li Covertura de Seguro de Degravamen
+                    li Abono directo en cuenta del socio o retiro en BancoEstado
+                    li Evaluación inmediata
+                  button.btn-blue.btn-pulse.hide-sm Solicita tu Crédito de Consumo
+              button.btn-blue.btn-pulse.btn-sticky_bottom.hide-md.hide-lg Solicita tu Ahorro
+              .tab-info_detalle
+                .tab-info_detalle-requisitos
+                  h5 Requisitos
+                  h6 Puedes enviarnos tus documentos vía Whatsapp o email
+                  ul
+                    li Última colilla de pago de pensión 
+                    li Cédula de Identidad vigente
+                    li Comprobante de domicilio (60 días de vigencia)
+                    li Tener menos de 93 años 11 meses
+      -var banner = "¿Quieres saber más sobre nuestro Depósito a Plazo?"
+      -var title = "Solicita tu Depósito a Plazo"
+      include ../components/form-footer
+      -var hubspot = "hubspot-footer"
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

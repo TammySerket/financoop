@@ -1,0 +1,65 @@
+footer {
+  background-color: $black;
+  border-top: 6px solid $blue;
+  padding: 1.5em 0;
+  &.hubspot-footer {
+    margin-top: -80px;
+    position: relative;
+  }
+  .footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    &-contacto {
+      .contacto-box {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        h4 {
+          @include typo($white, $light, 16px);
+          margin: 0 1em 0 0;
+        }
+        h5 {
+          @include typo($white, $semibold, 18px);
+          margin: 0;
+        }
+        img {
+          margin-right: 8px;
+        }
+      }
+      .footer-search {
+        input {
+          width: 100%;
+        }
+      }
+    }
+    &-links {
+      border-bottom: 1px solid $white;
+      ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 2em 0;
+        li {
+          @include typo($white, $semibold, 16px);
+          padding: 0 1.5em; 
+        }
+      }
+      h6 {
+        text-align: center;
+        @include typo($white, $normal, 14px);
+        font-style: italic;
+        margin: 1em 0;
+      }
+    }
+    &-logos {
+      padding: 1em;
+      .logo_financoop {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          max-width: 225px;
+        }
+      }
+    }
+  }
+}

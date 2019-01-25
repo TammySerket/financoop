@@ -1,0 +1,85 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+  body
+    main
+      include ../components/header
+      include ../components/navbar
+      .section-faq
+        h1 Preguntas frecuentes
+        nav
+          #nav-tab.nav.nav-tabs(role='tablist')
+            a#nav-generales-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-generales', role='tab', aria-controls='nav-generales', aria-selected='true') Generales
+            a#nav-financiamiento-tab.nav-item.nav-link(data-toggle='tab', href='#nav-financiamiento', role='tab', aria-controls='nav-financiamiento', aria-selected='false') Financiamiento
+        #nav-tabContent.tab-content
+          #nav-generales.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-generales-tab')
+            .tab-faq
+              .accordion
+                .tab
+                  input#tab-one(type='checkbox', name='tabs')
+                  label(for='tab-one') 1. ¿Cómo me hago socio de la Cooperativa Financoop?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-two(type='checkbox', name='tabs')
+                  label(for='tab-two') 2. ¿Cuántas cuotas debo comprar y cuál es el valor de éstas?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-three(type='checkbox', name='tabs')
+                  label(for='tab-three') 3. ¿Qué beneficios tengo al ser socio de las Cooperativa?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-four(type='checkbox', name='tabs')
+                  label(for='tab-four') 4. ¿Quiénes pueden ser socios de la Cooperativa?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-five(type='checkbox', name='tabs')
+                  label(for='tab-five') 5. ¿Quiénes regulan a la cooperativa?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+          #nav-financiamiento.tab-pane.fade(role='tabpanel', aria-labelledby='nav-financiamiento-tab')
+            .tab-faq
+              .accordion
+                .tab
+                  input#tab-oneb(type='checkbox', name='tabs')
+                  label(for='tab-oneb') 1. ¿Cómo me hago socio de la Cooperativa Financoop?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-twob(type='checkbox', name='tabs')
+                  label(for='tab-twob') 2. ¿Cuántas cuotas debo comprar y cuál es el valor de éstas?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-threeb(type='checkbox', name='tabs')
+                  label(for='tab-threeb') 3. ¿Qué beneficios tengo al ser socio de las Cooperativa?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-fourb(type='checkbox', name='tabs')
+                  label(for='tab-fourb') 4. ¿Quiénes pueden ser socios de la Cooperativa?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                .tab
+                  input#tab-fiveb(type='checkbox', name='tabs')
+                  label(for='tab-fiveb') 5. ¿Quiénes regulan a la cooperativa?
+                  .tab-content
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.
+
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

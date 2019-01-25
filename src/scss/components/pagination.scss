@@ -1,0 +1,19 @@
+nav {
+  padding: 1em 0 2em;
+  .pagination {
+    justify-content: center;
+    .page-item {
+      .page-link {
+        border: none;
+        text-decoration: none;
+        @include typo($black, $light, 14px);
+      }
+      &.active {
+        .page-link {
+          border: 1px solid $black;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

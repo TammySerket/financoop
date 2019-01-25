@@ -1,0 +1,27 @@
+.navbar {
+  &-menu {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+          a {
+            @include typo($black, $normal, 16px);
+            text-decoration: none;
+          }
+        margin: 0 1.5em;
+        &.active {
+          border-bottom: 2px solid $blue;
+        }
+      }
+    }
+  }
+}
+.gradient-border {
+  height: 4px;
+  background: linear-gradient(to right, $blue, $white);
+}

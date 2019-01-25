@@ -1,0 +1,406 @@
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none!important;
+  }
+  header {
+    background-color: #FFF!important;
+    display: block!important;
+    height: 54px!important;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 11;
+    .header_mobile {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1em;
+      width: 100%;
+      img {
+        &:first-child {
+          margin-right: auto
+        }
+      }
+      a {
+        cursor: pointer;
+        &:last-child {
+          margin-left: auto
+        }
+      }
+      .logo {
+        width: 125px;
+      }
+    }
+  }
+  .navbar {
+    height: calc(100vh - 53px);
+    left: -100%;
+    position: fixed;
+    width: 95%;
+    z-index: 11;
+    background-color: rgba($white, .95);
+    overflow: hidden;
+    transition: all .3s;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+    &.open-navbar {
+      left: 0;
+    }
+    &-menu {
+      height: auto!important;
+      justify-content: flex-start!important;
+      background-color: transparent!important;
+      flex-direction: column;
+      ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        li {
+          margin: 0!important;
+          padding: 1em 1.5em;
+          border-bottom: 1px solid $grey_light;
+        }
+      }
+      .help-bar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding-top: 10px;
+        a {
+          @include typo($black, $normal, 14px);
+          padding: 8px 2em;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .carrusel-home {
+    // height: auto!important;
+    .slide {
+      // img {
+      //   width: auto!important;
+      //   position: relative;
+      //   left: 50%;
+      //   transform: translateX(-50%);
+      //   -webkit-transform: translateX(-50%);
+      // }
+    }
+  }
+  .section{
+    &-productos {
+      h1 {
+        font-size: 24px!important;
+        padding: 1em 1.5em 0;
+        line-height: 25px;
+      }
+      .productos-financoop {
+        border: none!important;
+        border-radius: 0!important;
+        box-shadow: none!important;
+        padding: 1em 10px 0!important;
+      }
+      .col-12 {
+        margin: 0 0 4em;
+      }
+      .box-producto {
+        border: none!important;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        flex-direction: row!important;
+        position: relative;
+        padding: 1em 1em 2em!important;
+        img {
+          max-width: 52px;
+        }
+        button {
+          position: absolute;
+          bottom: -20px;
+          left: calc(50% - 75px);
+        }
+      }
+    }
+    &-leyenda {
+      padding: 170px 10px 2em!important;
+      h2 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+      }
+    }
+    &-beneficios {
+      padding: 1em 10px 3em!important;
+      h3 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+      }
+      .grid-beneficios {
+        display: flex!important;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        p {
+          text-align: center;
+        }
+        hr {
+          width: 135px;
+          margin: -10px 0 30px;
+          border-color: $grey_light;
+        }
+      }
+    }
+    &-socios {
+      &_box {
+        padding: 2em 10px!important;
+        flex-direction: column;
+        .socios_text {
+          margin: 0!important;
+          padding: 1em 0;
+          text-align: center;
+        }
+      }
+    }
+    &-busqueda {
+      padding: 1em 0!important;
+      h2 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+        margin: 0;
+      }
+      h3, h4 {
+        margin: 5px 0 15px;
+        font-size: 22px!important;
+      }
+    }
+    &-tab, &-faq {
+      h1 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+      }
+      .nav {
+        &-item {
+          width: 50%!important;
+        }
+      }
+      label {
+        min-height: 60px;
+        &:after {
+          top: 5px!important;
+        }
+      }
+      .tab {
+        &-info {
+          h4 {
+            font-size: 22px!important;
+            text-align: center;
+          }
+          .box-ejemplo {
+            flex: 0 0 50%!important;
+            margin-top: 1em;
+            padding-bottom: 1em;
+            p {
+              max-width: 120px!important;
+            }
+            &:nth-child(1) {
+              border-bottom: 1px solid $grey_light;
+            }
+            &:nth-child(2) {
+              border-bottom: 1px solid $grey_light;
+            }
+          }
+          &_detalle-credito {
+            flex-direction: column;
+            padding: 1em!important;
+            margin-left: -16px;
+            width: calc(100% + 32px);
+            h5 {
+              margin: 0;
+              text-align: center;
+              flex: 0 0 auto!important;
+              padding: 0!important;
+            }
+            img {
+              transform: rotate(90deg);
+            }
+          }
+          &_detalle-disclaimer {
+            p {
+              padding: 1em 0!important;
+            }
+          }
+          &_detalle-requisitos {
+            li {
+              flex: 0 0 100%!important;
+            }
+          }
+        }
+      }
+    }
+    &-nosotros {
+      h1 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+        max-width: 250px!important;
+        padding-bottom: 5px;
+        margin: 0 auto 1em auto!important;
+      }
+      h2 {
+        margin: 2em auto 1em auto!important;
+      }
+      p {
+        margin: 0 10px!important;
+      }
+      &_valores {
+        h3 {
+          font-weight: $normal!important;
+          font-size: 24px!important;
+        }
+        &_box {
+          margin: 0 10px;
+          padding: 1em!important;
+        }
+      }
+      &_foco {
+        h3 {
+          font-weight: $normal!important;
+          font-size: 24px!important;
+        }
+        &-box {
+          flex-direction: column;
+          padding: 1em 10px!important;
+        }
+      }
+      &_regulacion {
+        h3 {
+          font-weight: $normal!important;
+          font-size: 24px!important;
+        }
+        p {
+          padding-bottom: 2em;
+        }
+      }
+    }
+    &-sucursales {
+      .sucursal-box {
+        justify-content: center!important;
+      }
+    }
+    &-beneficios_page {
+      text-align: center;
+      padding: 1em 1em 3em!important;
+      h1 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+        margin: 1em 0 .5em !important;
+      }
+      h4 {
+        font-size: 20px!important;
+        padding-bottom: 1em;
+      }
+      img {
+        width: 100%;
+      }
+      .col-12 {
+        margin: 1em 0!important;
+        border-bottom: 2px solid $blue;
+      }
+    }
+    &-noticias {
+      &.inner {
+        .section-noticias_single {
+          border-bottom: 1px solid $grey_light;
+        }
+      }
+      &_single {
+        .col-md-5 {
+          max-height: initial!important;
+        }
+      }
+      .news-text {
+        padding: 0 10px!important;
+      }
+      .tab-news {
+        padding: 0 10px 1em!important;
+        .news-box {
+          flex: 0 0 100%!important;
+        }
+      }
+      .section-tab {
+        .nav-item {
+          width: 33.3%!important;
+        }
+      }
+    }
+  } 
+  .form-footer {
+    &_form {
+      padding: 0 10px;
+      h2 {
+        font-weight: $normal!important;
+        font-size: 24px!important;
+        border: none!important;
+      }
+    }
+  }
+  footer {
+    padding: 0 10px!important;
+    .footer {
+      display: flex;
+      flex-direction: column-reverse;
+      .logo_financoop{
+        justify-content: center!important;
+        img {
+          width: 150px;
+        }
+      }
+      &-links {
+        display: flex;
+        flex-direction: column-reverse;
+        border: none!important;
+        h6 {
+          margin: 0!important;
+        }
+        ul {
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+          margin: 1em 0!important;
+          li {
+            padding: 7px 0!important;
+            font-weight: $light!important;
+          }
+        }
+      }
+      &-contacto {
+        padding: 2em 0 1em;
+        .contacto-box {
+          display: flex;
+          flex-direction: column;
+          height: 100%!important;
+          h5 {
+            margin-top: 5px!important;
+            &:before {
+              content: url(../assets/icons/icon_telefono-white.svg);
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hide-md {
+    display: none!important;
+  }
+}
+@media (min-width: 1024px) {
+  .hide-lg {
+    display: none!important;
+  }
+}

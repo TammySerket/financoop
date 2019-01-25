@@ -1,0 +1,140 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+    //-Hubspot
+    script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+
+    
+  body
+    main
+      include ../components/header
+      - var creditos = "active"
+      include ../components/navbar
+      .section-tab
+        h1 Créditos de consumo
+        nav
+          #nav-tab.nav.nav-tabs(role='tablist')
+            a#nav-pensionado-tab.nav-item.nav-link.active(data-toggle='tab', href='#nav-pensionado', role='tab', aria-controls='nav-pensionado', aria-selected='true') Pensionado Cupemchi DxP
+            a#nav-programa-tab.nav-item.nav-link(data-toggle='tab', href='#nav-programa', role='tab', aria-controls='nav-programa', aria-selected='false') Programa ONG · PMU y Pro Empleo
+        #nav-tabContent.tab-content
+          #nav-pensionado.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-pensionado-tab')
+            .tab-info
+              .row
+                .col-12.col-md-6.order-md-1
+                  img(src="./assets/img/img_tabs.png", alt="Pensionados").img-tab
+                .col-12.col-md-6.order-md-0
+                  p Crédito orientado a personas pensionadas del sistema antiguo de previsión social IPS el cual tiene foco en inclusión financiera para las personas del tercera edad.
+                  h4 Ventajas del crédito de consumo
+                  ul 
+                    li Son de libre disposición y sin AVAL
+                    li Cuotas: Hasta 60 meses de plazo
+                    li Tasas reguladas por la Superintendencia de bancos e instituciones financieras de Chile
+                    li Atendemos socios hasta los 93 años 11 meses
+                    li Covertura de Seguro de Degravamen
+                    li Abono directo en cuenta del socio o retiro en BancoEstado
+                    li Evaluación inmediata
+                  button.btn-blue.btn-pulse.hide-sm Solicita tu Crédito de Consumo
+              button.btn-blue.btn-pulse.btn-sticky_bottom.hide-md.hide-lg Solicita tu Crédito de Consumo
+              .tab-info_detalle
+                h3 HAZ QUE TUS SUEÑOS SE HAGAN REALIDAD
+                .tab-info_detalle-ejemplos
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_salud.svg", alt="Salud")
+                    p Emergencia de salud
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_dental.svg", alt="Dental")
+                    p Tratamientos dentales
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_estudio.svg", alt="Ayuda a estudiantes")
+                    p Ayuda económica a nietos en la universidad o colegio 
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_hogar.svg", alt="Hogar")
+                    p Mejoras para el hogar
+                .tab-info_detalle-credito
+                  h5 Si solicitas un crédito de 
+                    span $1.000.000 
+                    | líquido en un plazo de 36 cuotas mensuales, pagarías:
+                  img(src="./assets/icons/icon_chevron-green.svg", alt="Chevron right")
+                  h5 Costo total del Crédito 
+                    span $1.314.867 
+                    | CAE 37,65%, tasa 1,35%
+                .tab-info_detalle-disclaimer
+                  p * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor
+                .tab-info_detalle-requisitos
+                  h5 Requisitos
+                  h6 Puedes enviarnos tus documentos vía Whatsapp o email
+                  ul
+                    li Última colilla de pago de pensión 
+                    li Cédula de Identidad vigente
+                    li Comprobante de domicilio (60 días de vigencia)
+                    li Tener menos de 93 años 11 meses
+          #nav-programa.tab-pane.fade(role='tabpanel', aria-labelledby='nav-programa-tab')
+            .tab-info
+              .row
+                .col-12.col-md-6
+                  img(src="./assets/img/img_tabs.png", alt="Pensionados").img-tab
+                .col-12.col-md-6
+                  p Crédito orientado a personas pensionadas del sistema antiguo de previsión social IPS el cual tiene foco en inclusión financiera para las personas del tercera edad.
+                  h4 Ventajas del crédito de consumo
+                  ul 
+                    li Son de libre disposición y sin AVAL
+                    li Cuotas: Hasta 60 meses de plazo
+                    li Tasas reguladas por la Superintendencia de bancos e instituciones financieras de Chile
+                    li Atendemos socios hasta los 93 años 11 meses
+                    li Covertura de Seguro de Degravamen
+                    li Abono directo en cuenta del socio o retiro en BancoEstado
+                    li Evaluación inmediata
+                  button.btn-blue.btn-pulse.hide-sm Solicita tu Crédito de Consumo
+              button.btn-blue.btn-pulse.btn-sticky_bottom.hide-md.hide-lg Solicita tu Crédito de Consumo
+              .tab-info_detalle
+                h3 HAZ QUE TUS SUEÑOS SE HAGAN REALIDAD
+                .tab-info_detalle-ejemplos
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_educacion.svg", alt="Educacion")
+                    p Educación hijos
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_hipotecario.svg", alt="Hipotecario")
+                    p Pie para postulación compra de viviendas
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_salud-rose.svg", alt="Emergencia de salud")
+                    p Emergencia de salud 
+                  .box-ejemplo
+                    img(src="./assets/icons/icon_refri.svg", alt="Linea blanca")
+                    p Línea blanca
+                .tab-info_detalle-credito.rose
+                  h5 Si solicitas un crédito de 
+                    span $1.000.000 
+                    | líquido en un plazo de 36 cuotas mensuales, pagarías:
+                  img(src="./assets/icons/icon_chevron-rose.svg", alt="Chevron right")
+                  h5 Costo total del Crédito 
+                    span $1.314.867 
+                    | CAE 37,65%, tasa 1,35%
+                .tab-info_detalle-disclaimer
+                  p * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolor
+                .tab-info_detalle-requisitos
+                  h5 Requisitos
+                  h6 Puedes enviarnos tus documentos vía Whatsapp o email
+                  ul
+                    li Última colilla de pago de pensión 
+                    li Cédula de Identidad vigente
+                    li Comprobante de domicilio (60 días de vigencia)
+                    li Tener menos de 93 años 11 meses
+
+      -var banner = "¿Quieres saber más sobre nuestros Créditos de Consumo?"
+      -var title = "Solicita tu Crédito de Consumo"
+      include ../components/form-footer
+      -var hubspot = "hubspot-footer"
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

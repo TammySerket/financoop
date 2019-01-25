@@ -1,0 +1,26 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+  body
+    main
+      include ../components/header
+      - var noticias = "active"
+      include ../components/navbar
+      .section-404
+        img(src="./assets/icons/icon_404.svg", alt="404")
+        h2 ¡La página que buscas, no existe!
+        a(href="index.html") Toca aquí para volver al Inicio
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

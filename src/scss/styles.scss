@@ -1,0 +1,33 @@
+@import './normalize';
+@import './var';
+@import './mixing';
+@import './bootstrap';
+@import './mediaqueries';
+
+// Components
+@import './components/header';
+@import './components/input-search';
+@import './components/navbar';
+@import './components/footer';
+@import './components/forms';
+@import './components/tabs';
+@import './components/buttons';
+@import './components/pagination';
+@import './components/sections';
+@import './components/carrusel-home';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: lavender;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: $white;
+}
+button {
+  cursor: pointer;
+}

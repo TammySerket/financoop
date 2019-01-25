@@ -1,0 +1,43 @@
+header {
+  background-color: #F2F2F2;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    @include typo($black, $normal, 13px);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    img {
+      margin-right: 5px;
+    }
+  }
+  .header {
+    &_contacto {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: center;
+      .a_tel {
+        @include typo($black, $bold, 13px);
+      }
+    }
+    &_utilidades {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: center;
+      .header_helper-size {
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        button {
+          width: 20px;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

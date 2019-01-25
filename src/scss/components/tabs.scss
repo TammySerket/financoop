@@ -1,0 +1,276 @@
+.nav-tabs {
+  border-bottom: 1px solid $grey;
+  justify-content: center;
+  .nav-link {
+    padding: .5em 0;
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    @include typo($black, $normal, 18px);
+    &:hover {
+      border-color: transparent;
+    }
+    &.active {
+      border: none;
+      font-weight: $semibold;
+    }
+    &:first-child {
+      &.active {
+        border-bottom: 4px solid $green;
+        color: $green;
+      }
+    }
+    &:last-child {
+      &.active {
+        border-bottom: 4px solid $rose;
+        color: $rose;
+      }
+    }
+    &.news {
+      width: 20%;
+      &.active {
+        border-bottom: 4px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+}
+.tab-content {
+  h4 {
+    @include typo($black, $light, 25px);
+    text-align: center;
+    margin: 1em 0 .5em;
+  }
+  .tab-info {
+    padding: 1em;
+    .img-tab {
+      width: 100%;
+    }
+    p {
+      @include typo($black, $normal, 14px);
+      line-height: 22px;
+    }
+    h4 {
+      @include typo($black, $normal, 18px);
+      margin: 1em 0 .6em;
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 2em 25px;
+      list-style-image: url('../assets/icons/icon_check.svg');
+      li {
+        @include typo($black, $normal, 14px);
+        padding: 5px 0;
+        line-height: 22px;
+      }
+    }
+    &_detalle {
+      padding: 2em 0 0;
+      h3 {
+        @include typo($black, $normal, 16px);
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 1em 0 2em;
+      }
+      &-ejemplos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .box-ejemplo {
+          flex: 0 0 25%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          p {
+            @include typo($black, $normal, 14px);
+            line-height: 18px;
+            max-width: 175px;
+            margin: 10px 0;
+          }
+        }
+      }
+      &-credito {
+        background-color: rgba($green, .2);
+        display: flex;
+        padding: 1em 3em;
+        justify-content: space-between;
+        &.rose {
+          background-color: rgba($rose, .2);
+        }
+        h5 {
+          @include typo($black, $normal, 18px);
+          line-height: 22px;
+          flex: 0 0 375px;
+          span {
+            font-weight: $bold;
+          }
+          &:last-child {
+            padding-right: 65px;
+          }
+        }
+      }
+      &-disclaimer {
+        p {
+          @include typo($black, $light, 10px);
+          line-height: 14px;
+          padding: 1em 7em;
+          text-align: center;
+        }
+      }
+      &-requisitos {
+        h5 {
+          @include typo($black, $bold, 18px);
+          margin: 2em 0 5px;
+        }
+        h6 {
+          @include typo($black, $light, 14px);
+          font-style: italic;
+          margin: 0 0 1em;
+        }
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            flex: 0 0 50%;
+          }
+        }
+      }
+    }
+  }
+  .tab-news {
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .news-box {
+      border: 1px solid #E4E4E4;
+      flex: 0 0 32%;
+      position: relative;
+      margin-bottom: 1em;
+      img {
+        width: 100%;
+      }
+      .cat-box {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 95px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h5 {
+          @include typo($white, $light, 14px);
+          margin: 0;
+        }
+        &.inversion {
+          background-color: $rose;
+        }
+        &.creditos {
+          background-color: $green;
+        }
+        &.negocio {
+          background-color: $blue;
+        }
+      }
+      &_text {
+        padding: 1em;
+        h3 {
+          @include typo($black, $light, 16px);
+          margin: 0;
+        }
+        p {
+          @include typo($black, $light, 14px);
+          margin: 0;
+          padding-top: 1em;
+        }
+      }
+      &_bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em 1em;
+        h6 {
+          margin: 0;
+          @include typo($black, $light, 11px);
+        }
+        .fav {
+          display: flex;
+          align-items: center;
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .tab-faq {
+    .accordion {
+      padding-bottom: 2em;
+      .tab{
+        position: relative;
+        margin-bottom: 1px;
+        width: 100%;
+        overflow: hidden;
+        &:last-of-type {
+          label {
+            border-bottom: 1px solid $grey_light;
+          }
+        }
+        input {
+          position: absolute;
+          opacity: 0;
+          z-index: -1;
+        }
+        label {
+          position: relative;
+          display: block;
+          padding: 1em;
+          cursor: pointer;
+          border-top: 1px solid $grey_light;
+          @include typo($black, $semibold, 14px);
+        }
+        &-content {
+          max-height: 0;
+          overflow: hidden;
+          -webkit-transition: max-height .3s linear .3s;
+          -o-transition: max-height .3s linear .3s;
+          transition: max-height .3s linear .3s;
+          p {
+            margin: 0 2em 1em;
+            @include typo($black, $light, 14px);
+          }
+        }
+        /* :checked */
+        input:checked ~ .tab-content {
+          max-height: 100vh;
+        }
+        input:checked ~ label {
+          color: $blue;
+        }
+        /* Icon */
+        label::after {
+          position: absolute;
+          right: 0;
+          font-size: 25px;
+          top: -15px;
+          display: block;
+          line-height: 3;
+          width: 3em;
+          height: 3em;
+          color: $blue;
+          text-align: center;
+          -webkit-transition: all .3s linear .3s;
+          -o-transition: all .3s linear .3s;
+          transition: all .3s linear .3s;
+        }
+        input[type=checkbox] + label::after {
+          content: "+";
+        }
+        input[type=checkbox]:checked + label::after {
+          transform: rotate(315deg);
+        }
+      }
+    }
+  }
+}

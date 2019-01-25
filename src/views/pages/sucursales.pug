@@ -1,0 +1,93 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+  body
+    main
+      include ../components/header
+      - var nosotros = "active"
+      include ../components/navbar
+      .section-sucursales
+        h1 ¡Encuentra tu sucursal más cercana!
+        p En Financoop contamos con 5 Sucursales en todo Chile y 1 unidad móvil a tu disposición. 
+        .sucursal-box
+          .sucursal
+            img.img-sucursal(src="./assets/img/serena.png", alt="La serena")
+            .sucursal-info
+              h3 La Serena
+              h4 Colón 408 - A
+              h5.tel 2 2595 0373
+              h5.week Lun a Jue 9:00 a 14:00                 
+              h5 Vie 9:00 a 14:00 / 14:45 a 16:30
+              a(href="") 
+                img(src="./assets/icons/icon_link.svg", alt="Link Google Maps")
+                | Ver en Google Maps
+          .sucursal
+            img.img-sucursal(src="./assets/img/valparaiso.png", alt="Valparaiso")
+            .sucursal-info
+              h3 Valparaiso
+              h4 Blanco Nº 1151 al Nº1199 Local 1
+              h5.tel 2 2595 0335
+              h5.week Lun a Jue 9:00 a 14:00                 
+              h5 Vie 9:00 a 14:00 / 14:45 a 16:30
+              a(href="") 
+                img(src="./assets/icons/icon_link.svg", alt="Link Google Maps")
+                | Ver en Google Maps
+          .sucursal
+            img.img-sucursal(src="./assets/img/santiago.png", alt="Santiago")
+            .sucursal-info
+              h3 Santiago
+              h4 Moneda 1137, Entrepiso
+              h5.tel 800 835 220
+              h5.week Lun a Jue 9:00 a 14:00                 
+              h5 Vie 9:00 a 14:00 / 14:45 a 16:30
+              a(href="") 
+                img(src="./assets/icons/icon_link.svg", alt="Link Google Maps")
+                | Ver en Google Maps
+          .sucursal
+            img.img-sucursal(src="./assets/img/talca.png", alt="Talca")
+            .sucursal-info
+              h3 Talca
+              h4 1 Poniente 1258, Of.321, Edif. Plaza Poniente
+              h5.tel 2 2595 0357
+              h5.week Lun a Jue 9:00 a 14:00                 
+              h5 Vie 9:00 a 14:00 / 14:45 a 16:30
+              a(href="") 
+                img(src="./assets/icons/icon_link.svg", alt="Link Google Maps")
+                | Ver en Google Maps
+          .sucursal
+            img.img-sucursal(src="./assets/img/concepcion.png", alt="Concepción")
+            .sucursal-info
+              h3 Concepción
+              h4 O'Higgins 940 of. 802
+              h5.tel 2 2897 5413
+              h5.week Lun a Jue 9:00 a 14:00                 
+              h5 Vie 9:00 a 14:00 / 14:45 a 16:30
+              a(href="") 
+                img(src="./assets/icons/icon_link.svg", alt="Link Google Maps")
+                | Ver en Google Maps
+          .sucursal
+            img.img-sucursal(src="./assets/img/puente-alto.png", alt="Puente Alto")
+            .sucursal-info
+              h3 Puente Alto
+              h4 Sucursal móvil
+              h5.tel 800 835 220
+              h5.week Lun a Jue 9:00 a 14:00                 
+              h5 Vie 9:00 a 14:00 / 14:45 a 16:30
+              a(href="") 
+                img(src="./assets/icons/icon_link.svg", alt="Link Google Maps")
+                | Ver en Google Maps
+
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

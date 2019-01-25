@@ -1,0 +1,278 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+    //-Hubspot
+    script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+
+  body
+    main
+      include ../components/header
+      - var noticias = "active"
+      include ../components/navbar
+      .section-noticias
+        h1 Noticias
+        .section-noticias_single
+          .row.no-gutters
+            .col-12.col-md-5
+              .cat-box.inversion
+                h5 Inversión
+              h6 14 enero, 2019
+              h2 Lorem ipsum dolor sit amet labore et dolore
+              img(src="./assets/img/news-single.png", alt="Noticias").hide-md.hide-lg.img-news
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+              .news-btn
+                .share
+                  img(src="./assets/icons/icon_share.svg", alt="Compartir")
+                .fav
+                  img(src="./assets/icons/fav_on.svg", alt="Me gusta")
+                  span 1
+            .col-md-7.hide-sm
+              img(src="./assets/img/news-single.png", alt="Noticias").img-news
+        .section-tab
+          nav
+            #nav-tab.nav.nav-tabs(role='tablist')
+              a#nav-news-tab.nav-item.nav-link.news.active(data-toggle='tab', href='#nav-news', role='tab', aria-controls='nav-news', aria-selected='true') Todas
+              a#nav-creditos-tab.nav-item.nav-link.news(data-toggle='tab', href='#nav-creditos', role='tab', aria-controls='nav-creditos', aria-selected='false') Créditos
+              a#nav-ahorro-tab.nav-item.nav-link.news(data-toggle='tab', href='#nav-ahorro', role='tab', aria-controls='nav-ahorro', aria-selected='false') Ahorro
+          #nav-tabContent.tab-content
+            #nav-news.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-news-tab')
+              .tab-news
+                .news-box
+                  img(src="./assets/img/news-1.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-2.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news3.png", alt="Noticias")
+                  .cat-box.negocio
+                    h5 Negocio
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-2.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news3.png", alt="Noticias")
+                  .cat-box.negocio
+                    h5 Negocio
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-1.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+              include ../components/pagination
+
+            #nav-creditos.tab-pane.fade(role='tabpanel', aria-labelledby='nav-creditos-tab')
+              .tab-news
+                .news-box
+                  img(src="./assets/img/news-1.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-2.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news3.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-2.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news3.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-1.png", alt="Noticias")
+                  .cat-box.creditos
+                    h5 Créditos
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+              include ../components/pagination
+
+            #nav-ahorro.tab-pane.fade(role='tabpanel', aria-labelledby='nav-ahorro-tab')
+              .tab-news
+                .news-box
+                  img(src="./assets/img/news-1.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-2.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news3.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-2.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news3.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+                .news-box
+                  img(src="./assets/img/news-1.png", alt="Noticias")
+                  .cat-box.inversion
+                    h5 Inversión
+                  .news-box_text
+                    h3 Lorem ipsum dolor sit amet labore et dolore
+                    p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur [...]
+                  .news-box_bottom
+                    h6 14 enero, 2019
+                    .fav
+                      img(src="./assets/icons/fav_off.svg", alt="Me gusta")
+                      span 0
+              include ../components/pagination
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

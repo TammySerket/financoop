@@ -1,0 +1,125 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+    //-Hubspot
+    script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+
+  body
+    main.nosotros-main
+      include ../components/header
+      - var nosotros = "active"
+      include ../components/navbar
+      .section-nosotros
+        .section-nosotros_mision
+          h1 Quienes somos
+          p Cooperativa Financoop nace en el año 2006 como un proyecto cuyo objetivo principal es entregar y apoyar servicios financieros a personas excluidas del sistema financiero tradicional. En los 13 años de existencia la Cooperativa ha brindado servicios financieros a pensionados, microempresarios y trabajadores logrando tener presencia en 15 ciudades del país. En la actualidad tenemos sucursales en las ciudades de Santiago, La Serena, Valparaíso, Talca y Concepción.
+          h2 Consejo de Administración
+          p Nuestro Consejo de Administración esta compuesto por profesionales de vasta experiencia en el sistema financiero. El Consejo de Administración tiene por misión fortalecer el gobierno corporativo, generando lineamientos estratégicos para la gestión de la Cooperativa.
+        .section-nosotros_directivos
+          .box-directivo
+            .box-directivo_single
+              img(src="./assets/img/img_director.png", alt="Director").foto-dir
+              .box-directivo_single-text
+                h3 Daniel Ruiz 
+                h4 Presidente
+                a 
+                  img(src="./assets/icons/icon_descargar.svg", alt="icono descargar")
+                  | Descargar
+            .box-directivo_single
+              img(src="./assets/img/img_director.png", alt="Director")
+              .box-directivo_single-text
+                h3 Daniel Ruiz 
+                h4 Presidente
+                a 
+                  img(src="./assets/icons/icon_descargar.svg", alt="icono descargar")
+                  | Descargar
+            .box-directivo_single
+              img(src="./assets/img/img_director.png", alt="Director")
+              .box-directivo_single-text
+                h3 Daniel Ruiz 
+                h4 Presidente
+                a 
+                  img(src="./assets/icons/icon_descargar.svg", alt="icono descargar")
+                  | Descargar
+            .box-directivo_single
+              img(src="./assets/img/img_director.png", alt="Director")
+              .box-directivo_single-text
+                h3 Daniel Ruiz 
+                h4 Presidente
+                a 
+                  img(src="./assets/icons/icon_descargar.svg", alt="icono descargar")
+                  | Descargar
+            .box-directivo_single
+              img(src="./assets/img/img_director.png", alt="Director")
+              .box-directivo_single-text
+                h3 Daniel Ruiz 
+                h4 Presidente
+                a 
+                  img(src="./assets/icons/icon_descargar.svg", alt="icono descargar")
+                  | Descargar
+            .box-directivo_single
+              img(src="./assets/img/img_director.png", alt="Director")
+              .box-directivo_single-text
+                h3 Daniel Ruiz 
+                h4 Presidente
+                a 
+                  img(src="./assets/icons/icon_descargar.svg", alt="icono descargar")
+                  | Descargar
+        .blue-box.hide-sm
+        .section-nosotros_valores
+          h3 Propuestas de valor para nuestros asociados
+          .section-nosotros_valores_box
+            .valores_single
+              img(src="./assets/icons/icon-line_ahorro.svg", alt="icono ahorro")
+              h6 Acceso a productos de créditos
+            .valores_single
+              img(src="./assets/icons/icon-line_documentos.svg", alt="icono documentos")
+              h6 Participación en las decisiones de la cooperativa
+            .valores_single
+              img(src="./assets/icons/icon-line_monedas.svg", alt="icono monedas")
+              h6 Iniciativa de impacto social
+            .valores_single
+              img(src="./assets/icons/icon-line_monedero.svg", alt="icono monedero")
+              h6 Acceso a productos de ahorro
+            .valores_single
+              img(src="./assets/icons/icon-line_libros.svg", alt="icono libros")
+              h6 Educación, formación e información
+            .valores_single
+              img(src="./assets/icons/icon-line_metrica.svg", alt="icono metrica")
+              h6 Participación de los resultados económicos
+        .section-nosotros_foco
+          h3 ¿Cómo aseguramos la atención de la tercera edad?
+          p Nuestra Cooperativa tiene foco en inclusión financiera para la tercera edad. Atendemos a nuestros socios hasta los 93 años, con cobertura de seguro de degravamen para su tranquilidad y la de sus familiares.
+          .section-nosotros_foco-box
+            .foco-single
+              img(src="./assets/img/img_computador.png", alt="imagen computador")
+              h5 Crédito rápido directo a tu cuenta
+              h6 Tope máximo de cuota de un 24% de la renta líquida
+            .foco-single
+              img(src="./assets/img/img_taller.png", alt="imagen taller")
+              h5 Monto y plazo de los créditos
+              h6 Hasta 60 meses de plazo
+            .foco-single
+              img(src="./assets/img/img_cafe.png", alt="imagen cafe")
+              h5 Seguro de Desgravamen
+              h6 Todos nuestros créditos tienen cobertura
+        .section-nosotros_regulacion
+          .section-nosotros_regulacion-box
+            h3 ¿Quienes nos regulan?
+            p Todas las tasas de créditos, transacciones, estados financieros, proceso de créditos están regulados por la Superintendencia de bancos de Chile y por el departamento de cooperativas del Ministerio de economía.
+            img(src="./assets/img/img_economia.png", alt="logo Ministerio de Economia")
+      include ../components/form-contact
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/bootstrap.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")

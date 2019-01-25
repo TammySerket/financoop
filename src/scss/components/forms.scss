@@ -1,0 +1,50 @@
+.form {
+  &-footer {
+    padding: 0 0 1em;
+    &_banner {
+      background-color: $blue;
+      padding: 1em;
+      p {
+        @include typo($white, $normal, 16px);
+        text-align: center;
+        margin: 0;
+        span {
+          font-size: 14px;
+          font-weight: $light;
+          a {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &_form {
+      text-align: center;
+      h2 {
+        @include typo($black, $semibold, 30px);
+        margin: 1.5em auto .5em;
+        padding: 5px 2em;
+        border-bottom: 1px solid $black;
+        max-width: 575px;
+      }
+      p {
+        @include typo($black, $normal, 16px);
+        line-height: 22px;
+        max-width: 490px;
+        margin: 0 auto;
+      }
+      .form-hubspot {
+        max-width: 470px;
+        margin: 0 auto;
+        padding: 2em 0 0;
+      }
+      .hide-mark {
+        height: 50px;
+        margin-top: -65px;
+        background-color: $white;
+        position: relative;
+        width: 100%
+      }
+    }
+  }
+}

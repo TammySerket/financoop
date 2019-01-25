@@ -1,0 +1,30 @@
+form {
+  margin: 0 10px;
+  position: relative;
+  input {
+    border: 1px solid #979797;
+    border-radius: 4px;
+    height: 30px;
+    padding: 0 10px;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $grey;
+      font-style: italic;
+      font-size: 12px;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $grey;
+      font-style: italic;
+      font-size: 12px;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $grey;
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+  img {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+  }
+}

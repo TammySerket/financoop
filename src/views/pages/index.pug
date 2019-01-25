@@ -1,0 +1,104 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='./css/libs/slick.css')
+    link(rel='stylesheet', href='./css/styles.css')
+    title Financoop
+
+    //-Hubspot
+    script(charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js")
+
+    
+  body
+    main
+      include ../components/header
+      - var inicio = "active"
+      include ../components/navbar
+      .carrusel-home
+        .slide 
+          .slide-filtro
+          .slide-img
+            img(src="./assets/img/img_carrusel.png", alt="imagen carrusel")
+          .slide-text
+            h3 Eso que quieres hazlo realidad
+            p.hide-sm Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
+            button.hide-sm.btn-blue Solicita tu Crédito de Consumo
+        .slide 
+          .slide-filtro
+          .slide-img
+            img(src="./assets/img/img_carrusel2.png", alt="imagen carrusel")
+          .slide-text
+            h3 Eso que quieres hazlo realidad
+            p.hide-sm Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
+            button.hide-sm.btn-blue Solicita tu Capital Social
+        .slide 
+          .slide-filtro
+          .slide-img
+            img(src="./assets/img/img_carrusel.png", alt="imagen carrusel")
+          .slide-text
+            h3 Eso que quieres hazlo realidad
+            p.hide-sm Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
+            button.hide-sm.btn-blue Solicita tu Depósito a Plazo
+      button.btn-sticky_top.hide-md.hide-lg QUIERO SER SOCIO
+      .section-productos
+        h1 Pide tu crédito de consumo o ahorra en Financoop
+        .productos-financoop
+          .row.no-gutters
+            .col-12.col-md-4
+              .box-producto
+                img(src="./assets/icons/icon_monedero.svg", alt="icono monedero")
+                .box-producto_text
+                  h5 Créditos de consumo
+                  h4 Pensionado Cupemchi DxP
+                button.btn-blue.btn-pulse Solicítalo aquí
+            .col-12.col-md-4
+              .box-producto
+                img(src="./assets/icons/icon_billetera.svg", alt="icono billetera")
+                .box-producto_text
+                  h5 Créditos de consumo
+                  h4 Programa ONG · PMU y Pro Empleo
+                button.btn-blue.btn-pulse Solicítalo aquí
+            .col-12.col-md-4
+              .box-producto
+                img(src="./assets/icons/icon_ahorro.svg", alt="icono ahorro")
+                .box-producto_text
+                  h5 Ahorro con Depósito a Plazo
+                  h4 tasa de ahorro de 0,30% mensual*
+                  h6 *VALOR REFERENCIAL
+                button.btn-blue.btn-pulse Solicítalo aquí
+      .section-leyenda
+        h2 ¿Por qué Financoop?
+        p Somos una de las Cooperativas de Ahorro y Crédito más grande del país con 13 años en el mercado financiero. Entregamos nuestros servicios a pensionados, micro empresarios y trabajadores. Contamos con más de 60 mil socios y 5 sucursales a lo largo del país (La Serena, Santiago, Valparaíso, Talca y Concepción).
+      .section-beneficios
+        h3 ¿Qué beneficios tengo al ser socio de la Cooperativa?
+        .grid-beneficios
+          img(src="./assets/icons/icon_justicia.svg", alt="icono justicia")
+          p Las cuotas de participación son un elemento de inversión reajustable de acuerdo con el IPC y no tiene cobros de comisión
+          hr.hide-md.hide-lg
+          img(src="./assets/icons/icon_globo.svg", alt="icono globo")
+          p Todos pueden ser socios de nuestra Cooperativa, sin necesidad de solicitar un crédito
+          hr.hide-md.hide-lg
+          img(src="./assets/icons/icon_mundo.svg", alt="icono mundo")
+          p Lorem ipsum dolor sit amet, consectetur incididunt ut labore et dolore magna aliqua.
+      .section-socios
+        .section-socios_box
+          .socios_img
+            img(src="./assets/img/img_socio.png", alt="imagen socia")
+          .socios_text
+            h4 ¿Cómo puedo ser socio de Financoop?
+            p Se puede hacer socio de nuestra cooperativa acercándote a nuestras sucursales a lo largo del país y comprando cuotas de participación social.
+          button.btn-blue Saber más
+
+      -var banner = "¿Quieres saber más sobre nuestros Créditos de Consumo?"
+      -var title = "¿Quieres que te asesoremos?"
+      include ../components/form-footer
+      -var hubspot = "hubspot-footer"
+      include ../components/footer
+      
+
+    script(src="js/libs/jQuery.min.js")
+    script(src="js/libs/slick.min.js")
+    script(src="js/funciones.js")
